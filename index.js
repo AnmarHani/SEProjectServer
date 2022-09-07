@@ -21,7 +21,7 @@ const app = express();
 
 /* Start Database Configurations */
   const PORT = process.env.PORT || 5000;
-  const databaseUrl = process.env.MONGO_DB_URL || 'mongodb+srv://discord-texter:FBJCczG8ng3XA0Yn@discord-texter.iinrj.mongodb.net/?retryWrites=true&w=majority';
+  const databaseUrl = process.env.MONGO_DB_URL;
 
   // Connect to Database
   mongoose.connect(databaseUrl);
